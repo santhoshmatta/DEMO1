@@ -35,9 +35,9 @@
                          <goal>wget</goal>
                       </goals>
             <configuration>
-			<url>http://localhost:8081/artifactory/</url>
+			<url>http://localhost:8081/local/ext-release-local/</url>
               <fromFile>ext-release-local</fromFile>
-                <toDir>${project.build.directory}</toDir>
+                <toDir>${project.build.directory}/local</toDir>
 			</configuration>
                 </execution>
             </executions>
