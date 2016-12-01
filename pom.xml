@@ -40,5 +40,11 @@
       </plugin>
 	</plugins>
   </build>
+ <dependency>
+  <groupId>maven-plugins</groupId>
+  <artifactId>maven-download-plugin</artifactId>
+  <version>0.2-SNAPSHOT</version>
+  <type>plugin</type>
+ </dependency>
 </project>
 
