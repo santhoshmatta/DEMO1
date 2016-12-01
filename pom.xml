@@ -21,7 +21,7 @@
 	 <plugin>
          <groupId>com.googlecode.maven-download-plugin</groupId>
          <artifactId>maven-download-plugin</artifactId>
-         <version>0.2-SNAPSHOT</version>
+         <version>1.1.0</version>
            <executions>
                 <execution>
                   <!-- the wget goal actually binds itself to this phase by default -->
@@ -40,11 +40,11 @@
       </plugin>
 	</plugins>
   </build>
- <dependency>
-  <groupId>maven-plugins</groupId>
-  <artifactId>maven-download-plugin</artifactId>
-  <version>0.2-SNAPSHOT</version>
-  <type>plugin</type>
- </dependency>
+<!-- https://mvnrepository.com/artifact/com.googlecode.maven-download-plugin/maven-download-plugin -->
+<dependency>
+    <groupId>com.googlecode.maven-download-plugin</groupId>
+    <artifactId>maven-download-plugin</artifactId>
+    <version>1.1.0</version>
+</dependency>
 </project>
 
