@@ -19,7 +19,7 @@
     <finalName>Demo</finalName>
     <plugins>
 	 <plugin>
-         <groupId>com.maven-download-plugin</groupId>
+         <groupId>com.googlecode.maven-download-plugin</groupId>
          <artifactId>maven-download-plugin</artifactId>
          <version>0.2-SNAPSHOT</version>
            <executions>
