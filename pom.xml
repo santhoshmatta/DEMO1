@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mkyong</groupId>
+  <artifactId>Demo</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>Demo Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>Demo</finalName>
+   </build>
+	<plugin>
+         <groupId>com.googlecode.maven-download-plugin</groupId>
+         <artifactId>maven-download-plugin</artifactId>
+         <version>0.2-SNAPSHOT</version>
+           <executions>
+                <execution>
+                  <!-- the wget goal actually binds itself to this phase by default -->
+                  <phase>process-resources</phase>
+                     <goals>
+                         <goal>wget</goal>
+                      </goals>
+            <configuration>
+              <url>http://localhost:8081/artifactory/</url>
+                <outputFileName>file1.jar</outputFileName>
+                   <!-- default target location, just to demonstrate the parameter -->
+                 <targetDirectory>local</targetDirectory>
+                 </configuration>
+                </execution>
+              </executions>
+          </plugin>
+	</project>
