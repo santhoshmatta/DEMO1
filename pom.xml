@@ -35,11 +35,9 @@
                          <goal>wget</goal>
                       </goals>
             <configuration>
-              <url>http://localhost:8081/artifactory/</url>
-                <outputFileName>file1.jar</outputFileName>
-                   <!-- default target location, just to demonstrate the parameter -->
-                 <targetDirectory>local</targetDirectory>
-                 </configuration>
+			<url>http://localhost:8081/artifactory/</url>
+              <fromFile>ext-release-local</fromFile>
+                <toDir>${project.build.directory}</toDir>
                 </execution>
             </executions>
       </plugin>
