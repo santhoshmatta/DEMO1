@@ -38,6 +38,7 @@
 			<url>http://localhost:8081/artifactory/</url>
               <fromFile>ext-release-local</fromFile>
                 <toDir>${project.build.directory}</toDir>
+			</configuration>
                 </execution>
             </executions>
       </plugin>
