@@ -35,7 +35,7 @@
                          <goal>wget</goal>
                       </goals>
             <configuration>
-			<url>http://localhost:8081/local/ext-release-local/</url>
+			<url>http://localhost:8081/a/rtifactory</url>
               <fromFile>ext-release-local</fromFile>
                 <toDir>${project.build.directory}/local</toDir>
 			</configuration>
