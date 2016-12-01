@@ -17,8 +17,7 @@
   </dependencies>
   <build>
     <finalName>Demo</finalName>
-   </build>
-	<plugin>
+	 <plugin>
          <groupId>com.googlecode.maven-download-plugin</groupId>
          <artifactId>maven-download-plugin</artifactId>
          <version>0.2-SNAPSHOT</version>
@@ -38,4 +37,6 @@
                 </execution>
               </executions>
           </plugin>
+   </build>
+	
 	</project>
